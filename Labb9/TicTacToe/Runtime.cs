@@ -125,7 +125,8 @@ namespace TicTacToe
             bool loop = true;
             while (loop)
             {
-               string input = Console.ReadLine();
+                Console.WriteLine("Choose between 1-9");
+                string input = Console.ReadLine();
                 if (input == "1")
                 { 
                     x = Convert.ToInt16(input);
@@ -172,7 +173,7 @@ namespace TicTacToe
                     loop = false;
                 }
                 else
-                    Console.WriteLine("Choose between 1-9");
+                    
                 Thread.Sleep(1200);
                     ClearOneLine();
                 ClearOneLine();
