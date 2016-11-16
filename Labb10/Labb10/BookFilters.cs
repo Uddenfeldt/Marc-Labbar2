@@ -23,11 +23,15 @@ namespace Labb10
         }
         public static bool IsGenreFantasy(Book book)
         {
-            return book.Genre == "Fantasy: ";
+            return book.Genre == "Fantasy";
         }
         public static bool IsGenreRomance(Book book)
         {
             return book.Genre == "Romance";
+        }
+        public static bool IsGenreFiction(Book book)
+        {
+            return book.Genre == "Fiction";
         }
         public static bool IsCheap(Book book)
         {

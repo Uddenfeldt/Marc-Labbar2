@@ -18,6 +18,7 @@ namespace Labb10
             BookFilter IsGenreMysteryFilter = BookFilters.IsGenreMystery;
             BookFilter IsGenreFantasyFilter = BookFilters.IsGenreFantasy;
             BookFilter IsGenreRomanceFilter = BookFilters.IsGenreRomance;
+            BookFilter IsGenreFictionFilter = BookFilters.IsGenreFiction;
             BookFilter IsCheapFilter = BookFilters.IsCheap;
             BookFilter IsExpensiveFilter = BookFilters.IsExpensive;
 
@@ -36,7 +37,10 @@ namespace Labb10
             Console.WriteLine("\nRomance: ");
             manager.PrintWhere(IsGenreRomanceFilter);
 
-            Console.WriteLine("\n Cheap Books: ");
+            Console.WriteLine("\nFiction: ");
+            manager.PrintWhere(IsGenreFictionFilter);
+
+            Console.WriteLine("\nCheap Books: ");
             manager.PrintWhere(IsCheapFilter);
 
             Console.WriteLine("\n Expensive books; ");
